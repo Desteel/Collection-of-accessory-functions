@@ -1,7 +1,7 @@
 let getMaxNumber = $numberArray => {
-    var max = 0;
+    let max = 0;
 
-    for (var number of $numberArray) {
+    for (let number of $numberArray) {
         if (number > max) {
             max = number;
         }
@@ -13,7 +13,7 @@ let getMaxNumber = $numberArray => {
 let getTag = $elem => $elem[0].nodeName.toLowerCase();
 
 let getContent = $target => {
-    var value,
+    let value,
         tag = getTag($target);
 
     if (tag === "input") {
